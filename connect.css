@@ -240,7 +240,7 @@
   color: var(--white); font-family: var(--serif); font-size: clamp(15px,1.8vw,18px);
   font-weight: 300; padding: clamp(14px,2vw,20px) clamp(16px,2.5vw,24px);
   outline: none; transition: border-color .3s, background .3s;
-  -webkit-appearance: none;
+  -webkit-appearance: none; cursor: none;
 }
 .form-input:focus, .form-textarea:focus {
   border-color: rgba(201,168,76,.5); background: rgba(201,168,76,.03);
