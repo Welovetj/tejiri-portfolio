@@ -1,0 +1,23 @@
+<svg width="640" height="760" viewBox="0 0 640 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="760" fill="#090909"/>
+  <rect x="28" y="28" width="584" height="704" rx="28" fill="url(#panel)" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="320" cy="252" r="116" fill="url(#halo)"/>
+  <circle cx="320" cy="242" r="84" fill="#C9A84C" fill-opacity="0.18"/>
+  <path d="M244 488C244 435.85 286.85 393 339 393H341C393.15 393 436 435.85 436 488V555H244V488Z" fill="#111111" stroke="#C9A84C" stroke-opacity="0.45"/>
+  <circle cx="320" cy="232" r="58" fill="#171717" stroke="#C9A84C" stroke-opacity="0.55"/>
+  <path d="M206 610H434" stroke="#C9A84C" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M236 646H404" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="320" y="104" text-anchor="middle" fill="#C9A84C" font-family="Georgia, serif" font-size="28" letter-spacing="8">TEJIRI EFEMINI</text>
+  <text x="320" y="684" text-anchor="middle" fill="#F5F0E8" font-family="Georgia, serif" font-size="34">Profile Photo</text>
+  <text x="320" y="718" text-anchor="middle" fill="rgba(245,240,232,0.6)" font-family="monospace" font-size="16" letter-spacing="3">REPLACE THIS FILE WITH YOUR REAL IMAGE</text>
+  <defs>
+    <linearGradient id="panel" x1="94" y1="54" x2="554" y2="702" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141414"/>
+      <stop offset="1" stop-color="#0B0B0B"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 252) rotate(90) scale(184)">
+      <stop stop-color="#C9A84C" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
