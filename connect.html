@@ -40,30 +40,34 @@
       Have a project in mind? Want to collaborate? Or just want to say <em>hello</em>? Fill out the form below and I'll get back to you.
     </p>
 
-    <form id="contactForm" class="reveal">
+    <form id="contactForm" class="reveal" data-form-endpoint="https://formspree.io/f/mgonpggq" novalidate>
       <div class="form-group">
         <label class="form-label" for="fname">Your Name</label>
-        <input class="form-input" id="fname" type="text" placeholder="e.g. Alex Johnson" required>
+        <input class="form-input" id="fname" name="name" type="text" placeholder="e.g. Alex Johnson" autocomplete="name" required>
       </div>
       <div class="form-group">
         <label class="form-label" for="femail">Email Address</label>
-        <input class="form-input" id="femail" type="email" placeholder="your@email.com" required>
+        <input class="form-input" id="femail" name="email" type="email" placeholder="your@email.com" autocomplete="email" required>
       </div>
       <div class="form-group">
         <label class="form-label" for="fsubject">Subject</label>
-        <input class="form-input" id="fsubject" type="text" placeholder="What's this about?">
+        <input class="form-input" id="fsubject" name="subject" type="text" placeholder="What's this about?">
       </div>
       <div class="form-group">
         <label class="form-label" for="fmessage">Message</label>
-        <textarea class="form-textarea" id="fmessage" placeholder="Tell me what's on your mind..." required></textarea>
+        <textarea class="form-textarea" id="fmessage" name="message" placeholder="Tell me what's on your mind..." required></textarea>
       </div>
-      <button type="submit" class="form-submit">Send Message &rarr;</button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
+      <button type="submit" class="form-submit" id="formSubmit">
+        <span data-submit-label>Send Message</span>
+        <span aria-hidden="true">&rarr;</span>
+      </button>
     </form>
 
     <div class="form-success" id="formSuccess">
       <div class="form-success-icon"><i data-lucide="check-circle" aria-hidden="true"></i></div>
       <div class="form-success-title">Message Sent!</div>
-      <div class="form-success-msg">Thanks for reaching out. I'll get back to you soon.</div>
+      <div class="form-success-msg">Thanks for reaching out. Your message was delivered successfully.</div>
     </div>
   </div>
 </section>
@@ -76,15 +80,6 @@
 
 <script src="nav.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-
-  // Contact form handler
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formSuccess').classList.add('visible');
-  });
-</script>
+<script src="connect.js"></script>
 </body>
 </html>
